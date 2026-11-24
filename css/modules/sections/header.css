@@ -1,0 +1,27 @@
+.header {
+  position: absolute;
+  inset: 0 0 auto;
+  z-index: 10;
+  width: 100%;
+  padding: 28px 32px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header a {
+  display: block;
+  transition: opacity .2s ease;
+}
+
+.header a:hover {
+  opacity: .65;
+}
+
+.header > a:first-child img {
+  width: 72px;
+}
+
+.header > a:last-child img {
+  width: 32px;
+}

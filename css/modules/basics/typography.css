@@ -1,0 +1,6 @@
+:root {
+  --display: "Bodoni Moda", serif;
+  --titulo: "Schibsted Grotesk", sans-serif;
+  --texto: var(--titulo);
+  --mono: "Azeret Mono", monospace;
+}

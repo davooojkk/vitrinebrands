@@ -1,0 +1,69 @@
+.collision {
+  position: relative;
+  min-height: 100vh;
+  padding: 70px 6vw;
+  overflow: hidden;
+  background: var(--marfil);
+  color: var(--tinta);
+}
+
+.collision-model,
+.collision-photo,
+.collision-index,
+.collision-title {
+  position: absolute;
+}
+
+.collision-model {
+  left: 18vw;
+  bottom: 0;
+  z-index: 3;
+  height: 88%;
+  max-width: none;
+}
+
+.collision-index,
+.collision-photo figcaption {
+  font: 500 11px var(--mono);
+  letter-spacing: .12em;
+}
+
+.collision-index {
+  top: 48px;
+  right: 6vw;
+}
+
+.collision-photo {
+  top: 12vh;
+  left: 8vw;
+  z-index: 2;
+  width: min(30vw, 430px);
+  margin: 0;
+}
+
+.collision-photo img {
+  width: 100%;
+  height: 72vh;
+  object-fit: cover;
+}
+
+.collision-photo figcaption {
+  margin-top: 10px;
+}
+
+.collision-title {
+  right: 5vw;
+  bottom: 10vh;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  font: 700 clamp(110px, 14.5vw, 240px)/.88 var(--titulo);
+  letter-spacing: -.055em;
+}
+
+.collision-title span:last-child {
+  font: italic 550 1.05em/.95 var(--display);
+  font-variation-settings: "opsz" 18;
+  letter-spacing: -.025em;
+}

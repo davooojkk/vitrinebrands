@@ -1,0 +1,66 @@
+main {
+  position: relative;
+  z-index: 1;
+  background: var(--marfil);
+}
+
+.footer {
+  position: sticky;
+  bottom: 0;
+  z-index: 0;
+  min-height: 65vh;
+  padding: 40px 5vw 28px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: hidden;
+  background: 
+  linear-gradient(rgb(0 0 0 / 25%), rgb(0 0 0 / 25%)),
+  var(--mar) url("../../../imgs/sources/textures/texture-sea-2.jpg") center / cover no-repeat;
+  color: var(--marfil);
+}
+
+.footer-top,
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font: 500 11px var(--mono);
+  letter-spacing: .08em;
+  text-transform: uppercase;
+}
+
+.footer-content {
+  text-align: center;
+}
+
+.footer-content p {
+  font: italic 500 clamp(28px, 3.5vw, 60px)/1.1 var(--display);
+  font-variation-settings: "opsz" 18;
+}
+
+.footer-brand {
+  display: block;
+  font: 700 clamp(80px, 12vw, 220px)/.95 var(--titulo);
+  letter-spacing: -.075em;
+  white-space: nowrap;
+}
+
+.footer-bottom {
+  padding-top: 24px;
+  border-top: 1px solid rgb(255 255 255 / 25%);
+}
+
+.footer a {
+  transition: opacity .25s ease;
+}
+
+.footer a:hover {
+  opacity: .6;
+}
+
+@media (prefers-reduced-motion: reduce), (max-height: 560px) {
+  .footer {
+    position: relative;
+  }
+}

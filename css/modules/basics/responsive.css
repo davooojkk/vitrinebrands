@@ -1,0 +1,550 @@
+@media (min-width: 1101px) and (max-width: 1440px) {
+  .hero-mare {
+    width: 28vw;
+  }
+
+  .hero-modelos {
+    height: 90%;
+  }
+
+  .collision-photo {
+    left: 5vw;
+    width: 28vw;
+  }
+
+  .collision-model {
+    left: 14vw;
+    width: 36vw;
+    height: 88%;
+    object-fit: contain;
+    object-position: left bottom;
+  }
+
+  .collision-title {
+    right: 5vw;
+    width: 43vw;
+    font-size: 11vw;
+  }
+
+  .wardrobe {
+    min-height: auto;
+    padding: 70px 5vw;
+    gap: 4vw;
+  }
+
+  .wardrobe-head h2 {
+    font-size: 5.8vw;
+  }
+
+  .look img {
+    height: auto;
+    aspect-ratio: 2 / 3;
+  }
+
+  .look:nth-child(2) { margin-top: 65px; }
+  .look:nth-child(3) { margin-top: 25px; }
+
+  .interludio {
+    min-height: 28vh;
+    padding: 55px 5vw;
+  }
+
+  .interludio em {
+    font-size: 8vw;
+  }
+
+  .footer-brand {
+    font-size: 11vw;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1100px) {
+
+  .header {
+    padding: 24px 5vw;
+  }
+
+  .header > a:first-child img { width: 60px; }
+  .header > a:last-child img { width: 30px; }
+
+  .hero-mare {
+    top: 28%;
+    left: 5vw;
+    width: 34vw;
+  }
+
+  .hero-modelos {
+    right: -1vw;
+    width: 59vw;
+    height: auto;
+    max-height: 85%;
+    object-fit: contain;
+    object-position: bottom;
+  }
+
+  .collision {
+    min-height: clamp(460px, 66vw, 680px);
+  }
+
+  .collision-index {
+    top: 30px;
+    right: 5vw;
+  }
+
+  .collision-photo {
+    top: 12%;
+    left: 5vw;
+    width: 30vw;
+  }
+
+  .collision-photo img {
+    height: 45vw;
+    max-height: 480px;
+  }
+
+  .collision-model {
+    left: 11vw;
+    bottom: 0;
+    width: 39vw;
+    height: auto;
+    max-width: none;
+    max-height: 86%;
+    object-fit: contain;
+    object-position: bottom;
+  }
+
+  .collision-title {
+    right: 5vw;
+    bottom: 15%;
+    width: 43vw;
+    font-size: 9.5vw;
+  }
+
+  .detalhe {
+    height: 48vh;
+    min-height: 360px;
+  }
+
+  .detalhe::before {
+    width: 55%;
+  }
+
+  .detalhe-copy {
+    width: 40vw;
+    right: 8vw;
+  }
+
+  .detalhe-copy h2 {
+    font-size: 5vw;
+  }
+
+  .detalhe-mini {
+    right: 52vw;
+    width: 12vw;
+  }
+
+  .wardrobe {
+    grid-template-columns: 1fr;
+    min-height: auto;
+    padding: 60px 5vw;
+    gap: 40px;
+  }
+
+  .wardrobe-head {
+    position: static;
+  }
+
+  .wardrobe-head h2 {
+    font-size: 8vw;
+  }
+
+  .wardrobe-stack {
+    gap: 16px;
+  }
+
+  .look img {
+    height: auto;
+    aspect-ratio: 2 / 3;
+  }
+
+  .look:nth-child(2) { margin-top: 55px; }
+  .look:nth-child(3) { margin-top: 25px; }
+
+  .look-info {
+    gap: 8px;
+  }
+
+  .interludio {
+    min-height: auto;
+    padding: 65px 5vw;
+  }
+
+  .interludio em {
+    font-size: 8vw;
+  }
+
+  .reel-inner {
+    gap: 18px;
+    padding: 5vh 10vw 8vh;
+  }
+
+  .reel-item {
+    flex-basis: 38vw;
+    height: 50vh;
+  }
+
+  .reel-item:nth-child(3n + 2) {
+    flex-basis: 46vw;
+    height: 58vh;
+  }
+
+  .reel-item:nth-child(3n) {
+    flex-basis: 32vw;
+    height: 44vh;
+  }
+
+  .visita {
+    grid-template-columns: 1fr 1fr;
+    padding: 40px 5vw;
+    min-height: auto;
+  }
+
+  .visita-mapa {
+    height: 420px;
+    min-height: 0;
+  }
+
+  .visita-info {
+    min-height: 380px;
+    margin-left: -2vw;
+    padding: 28px 24px;
+  }
+
+  .visita-info h2 {
+    font-size: 5vw;
+  }
+
+  .visita-dados {
+    gap: 16px;
+  }
+
+  .visita-dados p,
+  .visita-dados a {
+    font-size: 14px;
+  }
+
+  .footer {
+    position: relative;
+    min-height: 50vh;
+  }
+
+  .footer-brand {
+    font-size: 12vw;
+  }
+}
+
+
+@media (max-width: 767px) {
+
+  .header {
+    padding: 18px 5vw;
+  }
+
+  .header > a:first-child img { width: 52px; }
+  .header > a:last-child img { width: 28px; }
+
+  .hero {
+    height: 90svh;
+    min-height: 540px;
+  }
+
+  .hero-bg img {
+    object-position: 65% center;
+  }
+
+  .hero-mare {
+    top: 17%;
+    left: 50%;
+    width: 66%;
+    transform: translateX(-50%);
+  }
+
+  .hero-modelos {
+    right: 0;
+    width: 100%;
+    height: auto;
+    max-height: 64%;
+    object-fit: contain;
+    object-position: bottom;
+  }
+
+  .collision {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    min-height: auto;
+    padding: 35px 5vw 45px;
+    gap: 24px;
+  }
+
+  .collision-index,
+  .collision-model,
+  .collision-photo,
+  .collision-title {
+    position: relative;
+    inset: auto;
+  }
+
+  .collision-index {
+    justify-self: end;
+  }
+
+  .collision-photo,
+  .collision-model {
+    grid-area: 2 / 1;
+    align-self: end;
+  }
+
+  .collision-photo {
+    width: 58%;
+  }
+
+  .collision-photo img {
+    height: 65vw;
+  }
+
+  .collision-model {
+    justify-self: end;
+    width: 76%;
+    height: auto;
+    max-width: none;
+  }
+
+  .collision-title {
+    grid-area: 3 / 1;
+    font-size: clamp(54px, 19vw, 135px);
+  }
+
+  .detalhe {
+    height: 420px;
+    min-height: 0;
+  }
+
+  .detalhe::before {
+    inset: 9% 5vw;
+    width: auto;
+    left: 15%;
+  }
+
+  .detalhe-num {
+    top: 14%;
+    right: 9vw;
+  }
+
+  .detalhe-copy {
+    right: 9vw;
+    bottom: 15%;
+    width: 64%;
+  }
+
+  .detalhe-copy h2 {
+    font-size: clamp(32px, 9vw, 54px);
+  }
+
+  .detalhe-mini {
+    top: 22%;
+    left: 5vw;
+    right: auto;
+    width: 80px;
+  }
+
+  .wardrobe {
+    min-height: auto;
+    padding: 50px 5vw;
+    gap: 35px;
+  }
+
+  .wardrobe-head h2 {
+    font-size: clamp(48px, 13vw, 90px);
+  }
+
+  .wardrobe-stack {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 24px 14px;
+  }
+
+  .look:first-child {
+    grid-column: 1 / -1;
+    width: 76%;
+  }
+
+  .look:nth-child(2) { margin-top: 0; }
+  .look:nth-child(3) { margin-top: 45px; }
+
+  .look img {
+    height: auto;
+    aspect-ratio: 2 / 3;
+  }
+
+  .look-info {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 6px;
+  }
+
+  .look-info a {
+    white-space: normal;
+    font-size: 13px;
+  }
+
+  .interludio {
+    min-height: auto;
+    padding: 65px 5vw;
+  }
+
+  .interludio h2 {
+    font-size: 10px;
+  }
+
+  .interludio em {
+    font-size: clamp(38px, 12vw, 85px);
+  }
+
+  .reel {
+    padding: 30px 0;
+  }
+
+  .reel::before {
+    font-size: 24vw;
+  }
+
+  .reel-head,
+  .reel-foot {
+    font-size: 10px;
+    letter-spacing: .04em;
+  }
+
+  .reel-track {
+    touch-action: pan-y pinch-zoom;
+  }
+
+  .reel-inner {
+    gap: 14px;
+    padding: 4vh 10vw 8vh;
+  }
+
+  .reel-item {
+    flex-basis: 76vw;
+    height: 52vh;
+  }
+
+  .reel-item:nth-child(3n + 2) {
+    flex-basis: 82vw;
+    height: 58vh;
+  }
+
+  .reel-item:nth-child(3n) {
+    flex-basis: 64vw;
+    height: 44vh;
+  }
+
+  .reel-foot {
+    gap: 20px;
+  }
+
+  .reel-line {
+    width: 35%;
+  }
+
+  .visita {
+    grid-template-columns: 1fr;
+    min-height: auto;
+    padding: 30px 5vw;
+  }
+
+  .visita-mapa {
+    height: 330px;
+    min-height: 0;
+  }
+
+  .visita-mapa span {
+    bottom: 40px;
+    left: 16px;
+  }
+
+  .visita-info {
+    min-height: auto;
+    margin: -24px 10px 0;
+    padding: 30px 22px;
+  }
+
+  .visita-info h2 {
+    font-size: clamp(40px, 10vw, 65px);
+  }
+
+  .visita-dados {
+    gap: 18px;
+  }
+
+  .visita-dados p,
+  .visita-dados a {
+    font-size: 13px;
+  }
+
+  .footer {
+    position: relative;
+    min-height: 420px;
+    padding: 28px 5vw;
+    gap: 45px;
+  }
+
+  .footer-brand {
+    font-size: 12vw;
+  }
+
+  .footer-top,
+  .footer-bottom {
+    flex-wrap: wrap;
+    gap: 16px;
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 360px) {
+  .hero {
+    min-height: 480px;
+  }
+
+  .hero-mare {
+    width: 75%;
+  }
+
+  .collision-title {
+    font-size: 18vw;
+  }
+
+  .detalhe-copy h2 {
+    font-size: 30px;
+  }
+
+  .wardrobe-head h2 {
+    font-size: 44px;
+  }
+
+  .look-info {
+    font-size: 10px;
+  }
+
+  .visita-info {
+    margin-inline: 0;
+    padding: 25px 18px;
+  }
+
+  .visita-dados {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}

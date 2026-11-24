@@ -1,0 +1,77 @@
+.wardrobe {
+  min-height: 85vh;
+  padding: 90px 5vw;
+  display: grid;
+  grid-template-columns: .65fr 1.35fr;
+  gap: 5vw;
+  background: var(--marfil);
+  color: var(--tinta);
+}
+
+.wardrobe-head {
+  position: sticky;
+  top: 80px;
+  align-self: start;
+}
+
+.wardrobe-head span,
+.look-info {
+  font: 500 11px var(--mono);
+  letter-spacing: .08em;
+  text-transform: uppercase;
+}
+
+.wardrobe-head h2 {
+  margin-top: 20px;
+  font: 600 clamp(60px, 6vw, 110px)/.92 var(--titulo);
+  letter-spacing: -.05em;
+}
+
+.wardrobe-head em {
+  font: italic 550 1.1em/1 var(--display);
+  font-variation-settings: "opsz" 18;
+  letter-spacing: -.025em;
+}
+
+.wardrobe-stack {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  align-items: start;
+  gap: 18px;
+}
+
+.look:nth-child(2) { margin-top: 90px; }
+.look:nth-child(3) { margin-top: 35px; }
+
+.look img {
+  width: 100%;
+  height: 520px;
+  object-fit: cover;
+  transition: transform .5s ease;
+}
+
+.look:hover img {
+  transform: scale(.985);
+}
+
+.look-info {
+  margin-top: 14px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+}
+
+.look-info a {
+  font: 500 12px var(--texto);
+  letter-spacing: 0;
+  text-transform: none;
+  padding-bottom: 4px;
+  border-bottom: 1px solid;
+  transition: opacity .2s ease;
+}
+
+.look-info a:hover {
+  opacity: .5;
+}

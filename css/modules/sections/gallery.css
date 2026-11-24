@@ -1,0 +1,143 @@
+.reel {
+  position: relative;
+  overflow: hidden;
+  padding: 42px 0 36px;
+  background: #0c0c0c;
+  color: var(--marfil);
+}
+
+.reel::before {
+  content: "MARÉ";
+  position: absolute;
+  top: 2%;
+  right: 3vw;
+  font: italic 600 15vw/1 var(--titulo);
+  letter-spacing: -.06em;
+  color: rgb(255 255 255 / 5%);
+  pointer-events: none;
+}
+
+.reel-head,
+.reel-foot {
+  position: relative;
+  z-index: 5;
+  padding: 0 5vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font: 500 11px var(--mono);
+  letter-spacing: .1em;
+}
+
+.reel-track {
+  margin: 25px 0;
+  overflow: hidden;
+  cursor: grab;
+  touch-action: pan-y;
+  user-select: none;
+}
+
+.reel-track.dragging {
+  cursor: grabbing;
+}
+
+.reel-inner {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  width: max-content;
+  padding: 6vh 14vw 9vh;
+  counter-reset: look;
+  will-change: transform;
+}
+
+.reel-item {
+  position: relative;
+  flex: 0 0 27vw;
+  height: 57vh;
+  margin: 0;
+  opacity: .65;
+  counter-increment: look;
+  transition: opacity .6s ease;
+}
+
+.reel-item:nth-child(3n + 2) {
+  flex-basis: 35vw;
+  height: 68vh;
+  transform: translateY(-2vh);
+}
+
+.reel-item:nth-child(3n) {
+  flex-basis: 22vw;
+  height: 48vh;
+  transform: translateY(5vh);
+}
+
+.reel-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  pointer-events: none;
+  -webkit-user-drag: none;
+}
+
+.reel-item.active,
+.reel-item:hover {
+  opacity: 1;
+}
+
+.reel-item::after {
+  content: counter(look, decimal-leading-zero);
+  position: absolute;
+  left: 0;
+  bottom: -28px;
+  font: italic 550 24px/1 var(--display);
+  font-variation-settings: "opsz" 18;
+}
+
+.reel-foot {
+  gap: 50px;
+}
+
+.reel-foot > span:first-child {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  opacity: .85;
+}
+
+.reel-foot > span:first-child::after {
+  content: "↔";
+  font-size: 18px;
+  animation: gesto 3s ease-in-out infinite;
+}
+
+.reel-line {
+  width: 42%;
+  height: 2px;
+  overflow: hidden;
+  background: rgb(255 255 255 / 15%);
+}
+
+.reel-line span {
+  display: block;
+  height: 100%;
+  background: var(--marfil);
+  transform: scaleX(0);
+  transform-origin: left;
+}
+
+@keyframes gesto {
+  0%, 100% { transform: translateX(-5px); }
+  50% { transform: translateX(5px); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .reel-foot > span:first-child::after {
+    animation: none;
+  }
+
+  .reel-item {
+    transition: none;
+  }
+}

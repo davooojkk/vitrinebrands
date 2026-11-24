@@ -1,0 +1,13 @@
+@import "./modules/basics/reset.css";
+@import "./modules/basics/colors.css";
+@import "./modules/basics/typography.css";
+@import "./modules/sections/header.css";
+@import "./modules/sections/hero.css";
+@import "./modules/sections/colission.css";
+@import "./modules/sections/details.css";
+@import "./modules/sections/wardrobe.css";
+@import "./modules/sections/interludio.css";
+@import "./modules/sections/gallery.css";
+@import "./modules/sections/contacto.css";
+@import "./modules/sections/footer.css";
+@import "./modules/basics/responsive.css";

@@ -1,0 +1,102 @@
+.visita {
+  display: grid;
+  grid-template-columns: 1.2fr .8fr;
+  align-items: center;
+  min-height: 65vh;
+  padding: 45px 5vw;
+  background: var(--marfil);
+  color: var(--marfil);
+}
+
+.visita-mapa {
+  position: relative;
+  height: 60vh;
+  min-height: 460px;
+  overflow: hidden;
+}
+
+.visita-mapa img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: grayscale(1) contrast(.9);
+  transition: filter .6s ease, transform .6s ease;
+}
+
+.visita-mapa:hover img {
+  filter: none;
+  transform: scale(1.015);
+}
+
+.visita-mapa span {
+  position: absolute;
+  left: 24px;
+  bottom: 24px;
+  padding: 14px 18px;
+  background: var(--marfil);
+  color: var(--tinta);
+  font: 500 11px var(--mono);
+}
+
+.visita-info {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 440px;
+  margin-left: -3vw;
+  padding: 40px 3.5vw;
+   background:
+    linear-gradient(rgb(0 0 0 / 20%), rgb(0 0 0 / 20%)),
+    var(--mar) url("../../../imgs/sources/textures/texture-sea-3.jpg") center / cover no-repeat;
+}
+
+.visita-num,
+.visita-dados small {
+  font: 500 11px var(--mono);
+  letter-spacing: .1em;
+}
+
+.visita-info h2 {
+  margin: 35px 0;
+  font: 600 clamp(48px, 4.8vw, 85px)/.95 var(--titulo);
+  letter-spacing: -.045em;
+}
+
+.visita-info em {
+  font: italic 550 1.12em/1 var(--display);
+  font-variation-settings: "opsz" 18;
+  letter-spacing: -.025em;
+}
+
+.visita-dados {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 24px;
+  padding-top: 24px;
+  border-top: 1px solid rgb(255 255 255 / 25%);
+}
+
+.visita-dados small {
+  display: block;
+  margin-bottom: 12px;
+  opacity: .8;
+}
+
+.visita-dados p,
+.visita-dados a {
+  font: 400 15px/1.5 var(--texto);
+}
+
+.visita-dados a {
+  display: inline-block;
+  padding-bottom: 5px;
+  font-weight: 500;
+  border-bottom: 1px solid;
+  transition: opacity .25s ease;
+}
+
+.visita-dados a:hover {
+  opacity: .6;
+}

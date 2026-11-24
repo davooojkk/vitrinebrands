@@ -1,0 +1,66 @@
+.detalhe {
+  position: relative;
+  height: 52vh;
+  min-height: 440px;
+  overflow: hidden;
+  background: var(--mar);
+  color: var(--marfil);
+}
+
+.detalhe-main {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.detalhe::before {
+  content: "";
+  position: absolute;
+  inset: 9% 5vw 9% auto;
+  width: 44%;
+  background: var(--tinta);
+}
+
+.detalhe-num,
+.detalhe-copy,
+.detalhe-mini {
+  position: absolute;
+  z-index: 2;
+}
+
+.detalhe-num,
+.detalhe-copy span {
+  font: 500 11px var(--mono);
+  letter-spacing: .12em;
+}
+
+.detalhe-num {
+  top: 15%;
+  right: 8vw;
+}
+
+.detalhe-copy {
+  right: 8vw;
+  bottom: 17%;
+  width: 31vw;
+}
+
+.detalhe-copy h2 {
+  margin-top: 14px;
+  font: 500 clamp(42px, 4.5vw, 76px)/.95 var(--titulo);
+  letter-spacing: -.045em;
+}
+
+.detalhe-copy em {
+  font: italic 550 1.15em/1 var(--display);
+  font-variation-settings: "opsz" 18;
+  letter-spacing: -.025em;
+}
+
+.detalhe-mini {
+  top: 18%;
+  right: 44vw;
+  width: clamp(100px, 10vw, 160px);
+  aspect-ratio: 1;
+  object-fit: cover;
+}

@@ -1,0 +1,42 @@
+.interludio {
+  position: relative;
+  min-height: 34vh;
+  padding: 60px 5vw;
+  overflow: hidden;
+  background: var(--marfil);
+  color: var(--tinta);
+}
+
+.interludio-num,
+.interludio-next {
+  position: absolute;
+  font: 500 10px var(--mono);
+  letter-spacing: .12em;
+}
+
+.interludio-num {
+  top: 30px;
+  left: 5vw;
+}
+
+.interludio-next {
+  right: 5vw;
+  bottom: 25px;
+}
+
+.interludio h2 {
+  margin: 20px 0;
+  text-align: right;
+  font: 500 13px var(--mono);
+  letter-spacing: .08em;
+  text-transform: uppercase;
+}
+
+.interludio em {
+  display: block;
+  margin-top: 16px;
+  font: italic 550 clamp(65px, 9vw, 150px)/1 var(--display);
+  font-variation-settings: "opsz" 18;
+  letter-spacing: -.045em;
+  text-transform: none;
+}
